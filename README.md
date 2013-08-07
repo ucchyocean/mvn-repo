@@ -12,12 +12,14 @@
   &lt;/repositories&gt;
 </pre>
 
-LunaChatの参照
+LunaChatの参照<br />
+Vaultとdynmapが間接参照されています。<br />
+なお、dynmapはリポジトリがないので、各自ローカルリポジトリへのインストールをお願いします。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;LunaChat&lt;/artifactId&gt;
-      &lt;version&gt;2.3.1&lt;/version&gt;
+      &lt;version&gt;2.3.2&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

@@ -17,7 +17,7 @@ LunaChatの参照。Vaultとdynmapが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;LunaChat&lt;/artifactId&gt;
-      &lt;version&gt;2.4.0&lt;/version&gt;
+      &lt;version&gt;2.5.0&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 
@@ -35,6 +35,6 @@ ColorTeamingの参照
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ColorTeaming&lt;/artifactId&gt;
-      &lt;version&gt;2.1.0&lt;/version&gt;
+      &lt;version&gt;2.2.1&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>

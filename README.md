@@ -35,7 +35,7 @@ ColorTeamingの参照
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ColorTeaming&lt;/artifactId&gt;
-      &lt;version&gt;2.2.4&lt;/version&gt;
+      &lt;version&gt;2.2.5&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

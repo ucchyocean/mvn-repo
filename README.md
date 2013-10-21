@@ -47,3 +47,12 @@ ExpTimerの参照
       &lt;version&gt;2.2.4&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
+
+BattlePointsの参照
+<pre>
+    &lt;dependency&gt;
+      &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
+      &lt;artifactId&gt;BattlePoints&lt;/artifactId&gt;
+      &lt;version&gt;2.2.1&lt;/version&gt;
+    &lt;/dependency&gt;
+</pre>

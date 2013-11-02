@@ -39,16 +39,16 @@ ColorTeamingの参照
     &lt;/dependency&gt;
 </pre>
 
-ExpTimerの参照
+ExpTimerの参照。ColorTeamingが間接参照されています。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ExpTimer&lt;/artifactId&gt;
-      &lt;version&gt;2.2.4&lt;/version&gt;
+      &lt;version&gt;2.2.5&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 
-BattlePointsの参照
+BattlePointsの参照。VaultとColorTeamingが間接参照されています。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;

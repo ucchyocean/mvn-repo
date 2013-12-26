@@ -44,7 +44,7 @@ ExpTimerの参照。ColorTeamingが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ExpTimer&lt;/artifactId&gt;
-      &lt;version&gt;2.2.5&lt;/version&gt;
+      &lt;version&gt;2.2.6&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

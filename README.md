@@ -53,6 +53,6 @@ BattlePointsの参照。VaultとColorTeamingが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;BattlePoints&lt;/artifactId&gt;
-      &lt;version&gt;3.0.0&lt;/version&gt;
+      &lt;version&gt;3.1.0&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>

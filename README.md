@@ -26,7 +26,7 @@ NicoLiveAlertの参照
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;NicoLiveAlert&lt;/artifactId&gt;
-      &lt;version&gt;1.5.0&lt;/version&gt;
+      &lt;version&gt;2.0.1pre&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

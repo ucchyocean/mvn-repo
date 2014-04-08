@@ -21,7 +21,7 @@ LunaChatの参照。Vaultとdynmapが間接参照されています。
     &lt;/dependency&gt;
 </pre>
 
-NicoLiveAlertの参照
+NicoLiveAlertの参照。CraftBukkit 1.7.5-R0.1 が間接参照されています。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
@@ -30,7 +30,7 @@ NicoLiveAlertの参照
     &lt;/dependency&gt;
 </pre>
 
-ColorTeamingの参照
+ColorTeamingの参照。Vaultが間接参照されています。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
@@ -39,12 +39,12 @@ ColorTeamingの参照
     &lt;/dependency&gt;
 </pre>
 
-ExpTimerの参照。ColorTeamingが間接参照されています。
+ExpTimerの参照。ColorTeamingとBarAPIが間接参照されています。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ExpTimer&lt;/artifactId&gt;
-      &lt;version&gt;2.3.1&lt;/version&gt;
+      &lt;version&gt;2.3.2&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

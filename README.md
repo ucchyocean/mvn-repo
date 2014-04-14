@@ -26,7 +26,7 @@ NicoLiveAlertの参照。CraftBukkit 1.7.5-R0.1 が間接参照されていま�
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;NicoLiveAlert&lt;/artifactId&gt;
-      &lt;version&gt;2.0.1pre&lt;/version&gt;
+      &lt;version&gt;2.0.2pre&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

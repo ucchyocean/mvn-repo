@@ -21,12 +21,12 @@ LunaChatの参照。Vaultとdynmapが間接参照されています。
     &lt;/dependency&gt;
 </pre>
 
-NicoLiveAlertの参照。CraftBukkit 1.7.5-R0.1 が間接参照されています。
+NicoLiveAlertの参照。
 <pre>
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;NicoLiveAlert&lt;/artifactId&gt;
-      &lt;version&gt;2.0.2pre&lt;/version&gt;
+      &lt;version&gt;2.0.4&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

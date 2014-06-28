@@ -35,7 +35,7 @@ ColorTeamingの参照。Vaultが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ColorTeaming&lt;/artifactId&gt;
-      &lt;version&gt;2.3.7&lt;/version&gt;
+      &lt;version&gt;2.3.8&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 
@@ -44,7 +44,7 @@ ExpTimerの参照。ColorTeamingとBarAPIが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ExpTimer&lt;/artifactId&gt;
-      &lt;version&gt;2.3.3&lt;/version&gt;
+      &lt;version&gt;2.3.4&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

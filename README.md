@@ -35,7 +35,7 @@ ColorTeamingの参照。Vaultが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;ColorTeaming&lt;/artifactId&gt;
-      &lt;version&gt;2.3.10&lt;/version&gt;
+      &lt;version&gt;2.3.11&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

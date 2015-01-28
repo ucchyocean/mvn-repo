@@ -56,3 +56,12 @@ BattlePointsの参照。VaultとColorTeamingが間接参照されています。
       &lt;version&gt;3.3.0&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
+
+UndineMailerの参照。Vaultとjunitが間接参照されています。
+<pre>
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.bitbucket.ucchy&lt;/groupId&gt;
+      &lt;artifactId&gt;UndineMailer&lt;/artifactId&gt;
+      &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/dependency&gt;
+</pre>

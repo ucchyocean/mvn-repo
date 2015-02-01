@@ -3,10 +3,11 @@
   <groupId>org.bitbucket.ucchy</groupId>
   <artifactId>UndineMailer</artifactId>
   <versioning>
-    <release>1.1.0</release>
+    <release>1.2.0</release>
     <versions>
       <version>1.1.0</version>
+      <version>1.2.0</version>
     </versions>
-    <lastUpdated>20150128193850</lastUpdated>
+    <lastUpdated>20150201104511</lastUpdated>
   </versioning>
 </metadata>

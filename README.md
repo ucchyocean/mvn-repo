@@ -62,6 +62,6 @@ UndineMailerの参照。Vaultとjunitが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;org.bitbucket.ucchy&lt;/groupId&gt;
       &lt;artifactId&gt;UndineMailer&lt;/artifactId&gt;
-      &lt;version&gt;1.3.3&lt;/version&gt;
+      &lt;version&gt;1.3.4&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>

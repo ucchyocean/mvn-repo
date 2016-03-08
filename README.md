@@ -17,7 +17,7 @@ LunaChatの参照。Vaultとdynmapが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;LunaChat&lt;/artifactId&gt;
-      &lt;version&gt;2.7.9&lt;/version&gt;
+      &lt;version&gt;2.8.0&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 

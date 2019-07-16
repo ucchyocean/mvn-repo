@@ -3,7 +3,7 @@
   <groupId>org.bitbucket.ucchy</groupId>
   <artifactId>UndineMailer</artifactId>
   <versioning>
-    <release>1.9.1</release>
+    <release>1.9.2</release>
     <versions>
       <version>1.6.5</version>
       <version>1.6.7</version>
@@ -13,7 +13,8 @@
       <version>1.8.1</version>
       <version>1.9.0</version>
       <version>1.9.1</version>
+      <version>1.9.2</version>
     </versions>
-    <lastUpdated>20190713145506</lastUpdated>
+    <lastUpdated>20190716174118</lastUpdated>
   </versioning>
 </metadata>

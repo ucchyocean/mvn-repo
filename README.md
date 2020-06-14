@@ -17,7 +17,7 @@ LunaChatの参照。Vaultとdynmapが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;com.github.ucchyocean&lt;/groupId&gt;
       &lt;artifactId&gt;LunaChat&lt;/artifactId&gt;
-      &lt;version&gt;2.8.8&lt;/version&gt;
+      &lt;version&gt;3.0.0&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>
 
@@ -62,6 +62,6 @@ UndineMailerの参照。Vaultとjunitが間接参照されています。
     &lt;dependency&gt;
       &lt;groupId&gt;org.bitbucket.ucchy&lt;/groupId&gt;
       &lt;artifactId&gt;UndineMailer&lt;/artifactId&gt;
-      &lt;version&gt;1.6.7&lt;/version&gt;
+      &lt;version&gt;1.10.4&lt;/version&gt;
     &lt;/dependency&gt;
 </pre>

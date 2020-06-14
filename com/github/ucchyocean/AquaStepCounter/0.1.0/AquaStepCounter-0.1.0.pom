@@ -1,0 +1,169 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.ucchyocean</groupId>
+  <artifactId>AquaStepCounter</artifactId>
+  <version>0.1.0</version>
+  <description>Step Counter for general-purpose source codes.</description>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License version 3</name>
+      <url>http://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
+    <build.date>${maven.build.timestamp} </build.date>
+    <java.version>1.8</java.version>
+  </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Temporary Staging Repository</name>
+      <url>file://${project.basedir}/../mvn-repo</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.github.ucchyocean.aqua.AquaStepCounter</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <source>${java.version}</source>
+          <encoding>UTF-8</encoding>
+          <docencoding>UTF-8</docencoding>
+          <charset>UTF-8</charset>
+          <show>public</show>
+          <nohelp>true</nohelp>
+          <links>
+            <link>https://docs.oracle.com/javase/jp/8/docs/api/</link>
+          </links>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.6</version>
+        <executions>
+          <execution>
+            <id>exewrap</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+              <!-- Making release package for Windows. -->
+                <exec executable="${basedir}/exewrap/x64/exewrap.exe" failonerror="true">
+                  <arg value="-g" />
+                  <arg value="-e" />
+                  <arg value="SHARE" />
+                  <arg value="-t" />
+                  <arg value="${java.version}" />
+                  <arg value="-i" />
+                  <arg value="${basedir}/src/main/resources/icons/aqua_duck_small.ico" />
+                  <arg value="-v" />
+                  <arg value="${project.version}" />
+                  <arg value="-d" />
+                  <arg value="AquaStepCounter" />
+                  <arg value="-c" />
+                  <arg value="ucchy" />
+                  <arg value="-j" />
+                  <arg value="${basedir}/target/${project.artifactId}.jar" />
+                  <arg value="-o" />
+                  <arg value="${basedir}/target/${project.artifactId}_win64.exe" />
+                </exec>
+                <exec executable="${basedir}/exewrap/x64/exewrap.exe" failonerror="true">
+                  <arg value="-g" />
+                  <arg value="-A" />
+                  <arg value="x86" />
+                  <arg value="-e" />
+                  <arg value="SHARE" />
+                  <arg value="-t" />
+                  <arg value="${java.version}" />
+                  <arg value="-i" />
+                  <arg value="${basedir}/src/main/resources/icons/aqua_duck_small.ico" />
+                  <arg value="-v" />
+                  <arg value="${project.version}" />
+                  <arg value="-d" />
+                  <arg value="AquaStepCounter" />
+                  <arg value="-c" />
+                  <arg value="ucchy" />
+                  <arg value="-j" />
+                  <arg value="${basedir}/target/${project.artifactId}.jar" />
+                  <arg value="-o" />
+                  <arg value="${basedir}/target/${project.artifactId}_win32.exe" />
+                </exec>
+                <exec executable="${basedir}/tools/makeReleasePackage.bat" failonerror="true" />
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache</groupId>
+      <artifactId>commons-jrcs</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/org.apache.commons.jrcs.diff.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.swt</groupId>
+      <artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+      <version>4.9</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/swt.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.16</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
